@@ -1,0 +1,24 @@
+:root {
+    --cor-fundo: #F9F5E3;
+    --cor-superficie: #C3D59E;
+    --cor-texto: #0a0a0a;
+    --cor-texto-suave: #2A4A2A;
+    --cor-marca: #5C3B1A;
+    --cor-sobre-marca: #8B5A2C;
+    --cor-borda: #4F8C2A;
+
+    --fonte-texto: system-ui, sans-serif;
+    --fonte-titulo: "Rancho", cursive;
+     /* Multiplicador = 1.350 */
+    --tamanho-texto: 1rem;
+    --tamanho-h3: 1.350rem; 
+    --tamanho-h2: 1.823rem;
+    --tamanho-h1: 2.460rem;
+
+    --espaco-1: 0.5rem;
+    --espaco-2: 1rem;
+    --espaco-3: 1.5rem;
+    --espaco-4: 2.5rem;
+    --raio: 15px;
+    --sombra: 4px 4px 10px rgba(79, 140, 42, 0.4);
+}
