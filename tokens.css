@@ -2,9 +2,14 @@
     --cor-fundo: #F9F5E3;
     --cor-superficie: #C3D59E;
     --cor-texto: #0a0a0a;
+        /* Primeiro par: AA:4.5 e AAA: 7.0 */
+        /* Quinto par: AA:4.5 e AAA: 7.0 */
     --cor-texto-suave: #2A4A2A;
-    --cor-marca: #5C3B1A;
-    --cor-sobre-marca: #8B5A2C;
+         /* Segundo par: AA:4.5 e AAA: 7.0 */
+    --cor-marca: #4F8C2A;
+         /* Terceiro par: AA:3.0 e AAA: 4.5 */
+    --cor-sobre-marca: #5C3B1A;
+         /* Quarto par(antes de alterar): AA:4.5 e AAA: 7.0 */
     --cor-borda: #4F8C2A;
 
     --fonte-texto: system-ui, sans-serif;
