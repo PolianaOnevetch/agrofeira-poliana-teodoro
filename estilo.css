@@ -91,7 +91,9 @@ p {
     background-color: var(--cor-superficie);
 }
 
-.busca button, .formulario-cadastro button {
+.busca button, 
+.formulario-cadastro button,
+.cartao-produto button {
     background-color: var(--cor-marca);
     color: var(--cor-sobre-marca);
     border: none;
@@ -166,4 +168,50 @@ dl dt {
     padding: var(--espaco-2);
     margin-bottom: var(--espaco-1);
     max-width: 70ch;
+}
+
+/*Bloco 1: GRADE */
+main .lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    gap: var(--espaco-2);
+}
+
+main .cartao-produto {
+    max-width: none;
+    margin-bottom: 0;
+}
+
+.destaque {
+    grid-column: 1 / -1;
+}
+
+aside .lista-produtos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espaco-2);
+}
+
+aside .cartao-produto {
+    max-width: none;
+    margin-bottom: 0;
+}
+
+/*Bloco 2: INTERIOR DOS CARTÕES*/
+.cartao-produto img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--raio);
+}
+
+.cartao-produto h3 {
+    margin-top: var(--espaco-1);
+}
+
+.cartao-produto .produtor {
+    color: var(--cor-texto-suave);
+}
+
+.cartao-produto .preco {
+    font-weight: bold;
 }
