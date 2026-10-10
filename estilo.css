@@ -215,3 +215,48 @@ aside .cartao-produto {
 .cartao-produto .preco {
     font-weight: bold;
 }
+
+/*Bloco 3: CASCA*/
+.pagina-catalogo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+        "cabecalho"
+        "menu"
+        "conteudo"
+        "lateral"
+        "rodape";
+    gap: var(--espaco-2);
+}
+
+.pagina-catalogo > header {
+    grid-area: cabecalho;
+}
+
+.pagina-catalogo > nav {
+    grid-area: menu;
+    background-color: var(--cor-marca);
+    padding: var(--espaco-2);
+}
+
+.pagina-catalogo > main {
+    grid-area: conteudo;
+}
+
+.pagina-catalogo > aside {
+    grid-area: lateral;
+}
+
+.pagina-catalogo > footer {
+    grid-area: rodape;
+}
+
+@media (min-width: 58rem) {
+    .pagina-catalogo {
+        grid-template-columns: 12rem minmax(0, 1fr) 16rem;
+        grid-template-areas:
+            "cabecalho cabecalho cabecalho"
+            "menu conteudo lateral"
+            "rodape rodape rodape";
+    }
+}
