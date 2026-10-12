@@ -336,3 +336,18 @@ button:hover {
     outline: 3px solid var(--cor-foco);
     outline-offset: 3px;
 }
+
+/*Bloco 8: LINK DE PULAR*/
+.pular {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: var(--espaco-2);
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    transform: translateY(-150%);
+}
+
+.pular:focus-visible {
+    transform: translate(6px, 6px);
+}
