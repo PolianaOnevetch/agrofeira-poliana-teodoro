@@ -34,17 +34,23 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        color-scheme: dark;
+          color-scheme: dark;
+          --cor-fundo: #3D260F;
+          --cor-superficie: #5C3B1A;
+          --cor-texto: #F9F5E3;
+               /* Primeiro par: Taxa de Contraste: 12.94 - AA:4.5 e AAA: 7.0 */
+               /* Quinto par: Taxa de Contraste: 9.16 - AA:4.5 e AAA: 7.0 */
+          --cor-texto-suave: #C3D59E;
+               /* Segundo par: Taxa de Contraste: 8.99 - AA:4.5 e AAA: 7.0 */
+          --cor-marca: #C3D59E;
+               /* Terceiro par: Taxa de Contraste: 8.99 - AA:3.0 e AAA: 4.5 */
+          --cor-sobre-marca: #3D260F;
+               /* Quarto par: Taxa de Contraste: 8.99 - AA:4.5 e AAA: 7.0 */
+          --cor-borda: #4F8C2A;
 
-        --cor-fundo: #3D260F;
-        --cor-superficie: #5C3B1A;
-        --cor-texto: #F9F5E3;
-        --cor-texto-suave: #C3D59E;
-        --cor-marca: #C3D59E;
-        --cor-sobre-marca: #3D260F;
-        --cor-borda: #4F8C2A;
-
-        --cor-marca-forte: #F9F5E3;
-        --cor-foco: #F9F5E3;
+          --cor-marca-forte: #F9F5E3;
+               /*Taxa de Contraste: 12.94 - AA:4.5 e AAA: 7.0 */
+          --cor-foco: #F9F5E3;
+               /*Taxa de Contraste: 12.94 - AA:4.5 e AAA: 7.0 */
     }
 }
