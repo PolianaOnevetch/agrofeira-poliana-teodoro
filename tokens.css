@@ -12,7 +12,9 @@
          /* Quarto par(antes de alterar): AA:4.5 e AAA: 7.0 */
     --cor-borda: #4F8C2A;
     --cor-marca-forte: #3D260F;
+          /*Taxa de Contraste 6.74: AA:4.5 e AAA: 7.0 */
     --cor-foco: #005A9C;
+         /*Taxa de Contraste 6.52: AA:4.5 e AAA: 7.0 */
 
     --fonte-texto: system-ui, sans-serif;
     --fonte-titulo: "Rancho", cursive;
