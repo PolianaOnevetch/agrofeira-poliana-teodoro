@@ -11,6 +11,8 @@
     --cor-sobre-marca: #8BC34A;
          /* Quarto par(antes de alterar): AA:4.5 e AAA: 7.0 */
     --cor-borda: #4F8C2A;
+    --cor-marca-forte: #3D260F;
+    --cor-foco: #005A9C;
 
     --fonte-texto: system-ui, sans-serif;
     --fonte-titulo: "Rancho", cursive;

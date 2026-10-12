@@ -313,3 +313,19 @@ aside .cartao-produto {
         align-self: start;
     }
 }
+
+/*Bloco 6: HOVER E FOCO*/
+button:hover {
+    background-color: var(--cor-marca-forte);
+}
+
+:focus-visible {
+    outline: 3px solid var(--cor-foco);
+    outline-offset: 3px;
+}
+
+.cabecalho-site :focus-visible,
+.pagina-catalogo > nav :focus-visible,
+.pular:focus-visible {
+    outline-color: var(--cor-sobre-marca);
+}
