@@ -31,3 +31,20 @@
     --raio: 15px;
     --sombra: 4px 4px 10px rgba(79, 140, 42, 0.4);
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+
+        --cor-fundo: #1C2118;
+        --cor-superficie: #303B2A;
+        --cor-texto: #F5F5F0;
+        --cor-texto-suave: #D0DCC6;
+        --cor-marca: #2B2118;
+        --cor-sobre-marca: #D5EBA8;
+        --cor-borda: #8BAA70;
+
+        --cor-marca-forte: #1B160F;
+        --cor-foco: #8CCBFF;
+    }
+}
