@@ -1,56 +1,58 @@
-:root {
-    --cor-fundo: #F9F5E3;
-    --cor-superficie: #C3D59E;
-    --cor-texto: #0a0a0a;
-        /* Primeiro par: AA:4.5 e AAA: 7.0 */
-        /* Quinto par: AA:4.5 e AAA: 7.0 */
-    --cor-texto-suave: #2A4A2A;
-         /* Segundo par: AA:4.5 e AAA: 7.0 */
-    --cor-marca: #5C3B1A;
-         /* Terceiro par: AA:3.0 e AAA: 4.5 */
-    --cor-sobre-marca: #8BC34A;
-         /* Quarto par(antes de alterar): AA:4.5 e AAA: 7.0 */
-    --cor-borda: #4F8C2A;
-    --cor-marca-forte: #3D260F;
-          /*Taxa de Contraste 6.74: AA:4.5 e AAA: 7.0 */
-    --cor-foco: #005A9C;
-         /*Taxa de Contraste 6.52: AA:4.5 e AAA: 7.0 */
+@layer base {
+     :root {
+     --cor-fundo: #F9F5E3;
+     --cor-superficie: #C3D59E;
+     --cor-texto: #0a0a0a;
+          /* Primeiro par: AA:4.5 e AAA: 7.0 */
+          /* Quinto par: AA:4.5 e AAA: 7.0 */
+     --cor-texto-suave: #2A4A2A;
+          /* Segundo par: AA:4.5 e AAA: 7.0 */
+     --cor-marca: #5C3B1A;
+          /* Terceiro par: AA:3.0 e AAA: 4.5 */
+     --cor-sobre-marca: #8BC34A;
+          /* Quarto par(antes de alterar): AA:4.5 e AAA: 7.0 */
+     --cor-borda: #4F8C2A;
+     --cor-marca-forte: #3D260F;
+               /*Taxa de Contraste 6.74: AA:4.5 e AAA: 7.0 */
+     --cor-foco: #005A9C;
+          /*Taxa de Contraste 6.52: AA:4.5 e AAA: 7.0 */
 
-    --fonte-texto: system-ui, sans-serif;
-    --fonte-titulo: "Rancho", cursive;
-     /* Multiplicador = 1.350 */
-    --tamanho-texto: 1rem;
-    --tamanho-h3: 1.350rem; 
-    --tamanho-h2: 1.823rem;
-    --tamanho-h1: 2.460rem;
+     --fonte-texto: system-ui, sans-serif;
+     --fonte-titulo: "Rancho", cursive;
+          /* Multiplicador = 1.350 */
+     --tamanho-texto: 1rem;
+     --tamanho-h3: 1.350rem; 
+     --tamanho-h2: 1.823rem;
+     --tamanho-h1: 2.460rem;
 
-    --espaco-1: 0.5rem;
-    --espaco-2: 1rem;
-    --espaco-3: 1.5rem;
-    --espaco-4: 2.5rem;
-    --raio: 15px;
-    --sombra: 4px 4px 10px rgba(79, 140, 42, 0.4);
-}
+     --espaco-1: 0.5rem;
+     --espaco-2: 1rem;
+     --espaco-3: 1.5rem;
+     --espaco-4: 2.5rem;
+     --raio: 15px;
+     --sombra: 4px 4px 10px rgba(79, 140, 42, 0.4);
+     }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-          color-scheme: dark;
-          --cor-fundo: #3D260F;
-          --cor-superficie: #5C3B1A;
-          --cor-texto: #F9F5E3;
-               /* Primeiro par: Taxa de Contraste: 12.94 - AA:4.5 e AAA: 7.0 */
-               /* Quinto par: Taxa de Contraste: 9.16 - AA:4.5 e AAA: 7.0 */
-          --cor-texto-suave: #C3D59E;
-               /* Segundo par: Taxa de Contraste: 8.99 - AA:4.5 e AAA: 7.0 */
-          --cor-marca: #C3D59E;
-               /* Terceiro par: Taxa de Contraste: 8.99 - AA:3.0 e AAA: 4.5 */
-          --cor-sobre-marca: #3D260F;
-               /* Quarto par: Taxa de Contraste: 8.99 - AA:4.5 e AAA: 7.0 */
-          --cor-borda: #4F8C2A;
+     @media (prefers-color-scheme: dark) {
+          :root {
+               color-scheme: dark;
+               --cor-fundo: #3D260F;
+               --cor-superficie: #5C3B1A;
+               --cor-texto: #F9F5E3;
+                    /* Primeiro par: Taxa de Contraste: 12.94 - AA:4.5 e AAA: 7.0 */
+                    /* Quinto par: Taxa de Contraste: 9.16 - AA:4.5 e AAA: 7.0 */
+               --cor-texto-suave: #C3D59E;
+                    /* Segundo par: Taxa de Contraste: 8.99 - AA:4.5 e AAA: 7.0 */
+               --cor-marca: #C3D59E;
+                    /* Terceiro par: Taxa de Contraste: 8.99 - AA:3.0 e AAA: 4.5 */
+               --cor-sobre-marca: #3D260F;
+                    /* Quarto par: Taxa de Contraste: 8.99 - AA:4.5 e AAA: 7.0 */
+               --cor-borda: #4F8C2A;
 
-          --cor-marca-forte: #F9F5E3;
-               /*Taxa de Contraste: 12.94 - AA:4.5 e AAA: 7.0 */
-          --cor-foco: #F9F5E3;
-               /*Taxa de Contraste: 12.94 - AA:4.5 e AAA: 7.0 */
-    }
+               --cor-marca-forte: #F9F5E3;
+                    /*Taxa de Contraste: 12.94 - AA:4.5 e AAA: 7.0 */
+               --cor-foco: #F9F5E3;
+                    /*Taxa de Contraste: 12.94 - AA:4.5 e AAA: 7.0 */
+          }
+     }
 }
