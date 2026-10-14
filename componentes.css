@@ -5,7 +5,9 @@
         padding: var(--espaco-3);
     }
 
-    .menu {
+    .menu,
+    .lista-produtos,
+    .barra-categorias {
         list-style: none;
         padding: 0;
         margin: 0;
@@ -25,33 +27,18 @@
         padding: var(--espaco-2);
     }
 
-    .lista-produtos {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
     .cartao-produto {
         background-color: var(--cor-superficie);
         border: 1px solid var(--cor-borda);
         border-radius: var(--raio);
         box-shadow: var(--sombra);
         padding: var(--espaco-2);
-        margin-bottom: var(--espaco-2);
-        max-width: 30rem;
         container-type: inline-size;
     }
 
     .figura-destaque figcaption {
         color: var(--cor-texto-suave);
         margin-top: var(--espaco-1);
-    }
-
-    .busca input {
-        border: 1px solid var(--cor-borda);
-        border-radius: var(--raio);
-        padding: 0.5em;
-        background-color: var(--cor-superficie);
     }
 
     .busca button, 
@@ -104,6 +91,7 @@
         color: var(--cor-marca);
     }
 
+    .busca input,
     .formulario-cadastro input[type="text"],
     .formulario-cadastro input[type="email"],
     .formulario-cadastro input[type="tel"],
@@ -143,11 +131,6 @@
         gap: var(--espaco-2);
     }
 
-    main .cartao-produto {
-        max-width: none;
-        margin-bottom: 0;
-    }
-
     .destaque {
         grid-column: 1 / -1;
     }
@@ -158,18 +141,11 @@
         gap: var(--espaco-2);
     }
 
-    aside .cartao-produto {
-        max-width: none;
-        margin-bottom: 0;
-    }
-
     /*Bloco 4: BARRA DE CATEGORIAS*/
     .barra-categorias {
         display: flex;
         flex-wrap: wrap;
         gap: var(--espaco-1);
-        list-style: none;
-        padding: 0;
         margin: 0 0 var(--espaco-2);
     }
 
@@ -214,15 +190,9 @@
         }
     }
 
-    /* Bloco 6: HOVER E FOCO */
+    /* Bloco 6: HOVER*/
     button:hover {
         background-color: var(--cor-marca-forte);
-    }
-
-    .cabecalho-site :focus-visible,
-    .pagina-catalogo > nav :focus-visible,
-    .pular:focus-visible {
-        outline-color: var(--cor-sobre-marca);
     }
 
     /* Bloco 7: HAS */

@@ -97,4 +97,10 @@
         outline: 3px solid var(--cor-foco);
         outline-offset: 3px;
     }
+     .cabecalho-site :focus-visible,
+    .pagina-catalogo > nav :focus-visible,
+    .pular:focus-visible {
+        outline-color: var(--cor-sobre-marca);
+    }
+
 }
