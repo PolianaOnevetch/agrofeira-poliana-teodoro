@@ -9,11 +9,13 @@
           /* Segundo par: AA:4.5 e AAA: 7.0 */
      --cor-marca: #5C3B1A;
           /* Terceiro par: AA:3.0 e AAA: 4.5 */
+     --cor-marca-rgb: 92, 59, 26; /* Cópia de --cor-marca */
      --cor-sobre-marca: #8BC34A;
           /* Quarto par(antes de alterar): AA:4.5 e AAA: 7.0 */
      --cor-borda: #4F8C2A;
      --cor-marca-forte: #3D260F;
                /*Taxa de Contraste 6.74: AA:4.5 e AAA: 7.0 */
+     --cor-marca-forte-rgb: 61, 38, 15; /* Cópia de --cor-marca-forte */
      --cor-foco: #005A9C;
           /*Taxa de Contraste 6.52: AA:4.5 e AAA: 7.0 */
 
@@ -45,12 +47,14 @@
                     /* Segundo par: Taxa de Contraste: 8.99 - AA:4.5 e AAA: 7.0 */
                --cor-marca: #C3D59E;
                     /* Terceiro par: Taxa de Contraste: 8.99 - AA:3.0 e AAA: 4.5 */
+               --cor-marca-rgb: 195, 213, 158; /* Cópia de --cor-marca */
                --cor-sobre-marca: #3D260F;
                     /* Quarto par: Taxa de Contraste: 8.99 - AA:4.5 e AAA: 7.0 */
                --cor-borda: #4F8C2A;
 
                --cor-marca-forte: #F9F5E3;
                     /*Taxa de Contraste: 12.94 - AA:4.5 e AAA: 7.0 */
+               --cor-marca-forte-rgb: 249, 245, 227; /* Cópia de --cor-marca-forte */
                --cor-foco: #F9F5E3;
                     /*Taxa de Contraste: 12.94 - AA:4.5 e AAA: 7.0 */
           }
