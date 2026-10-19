@@ -52,7 +52,7 @@
         <p><strong>1200 px: </strong>Cartões em 3 colunas, a lista "Mais pedidos" aparece e o resultado do teste de rolagem é false.</p>
 
         <h3>1. A customização</h3>
-        <table class="tabela-safra"
+        <table class="tabela-safra">
             <caption>Variáveis</caption>
             <thead>
                 <tr>
@@ -85,7 +85,7 @@
                 <tr>
                     <th scope="row">--bs-border-radius</th>
                     <td>var(--raio) (15px)</td>
-                    <td>Arrendoda abordas dos itens que a usam, de acordo com a medida já definida.</td>
+                    <td>Arrendonda as bordas dos itens que a usam, de acordo com a medida já definida.</td>
                 </tr>
                 <tr>
                     <th scope="row">--bs-link-color-rgb</th>
@@ -149,16 +149,17 @@
         Ao alterar somente a variável --bs-primary no :root não altera o fundo do botão, porque, no CSS do Bootstrap, a regra .btn-primary define a variável --bs-btn-bg com o valor fixo #0d6efd, em vez de utilizar var(--bs-primary). Assim, o botão lê diretamente --bs-btn-bg para definir seu fundo.
         </p>
         <figure>
-          <img src="captura-3-regra-botao.png" alt="Painel Elements com filtro .btn-primary" width="718" height="331">
-          <figcaption>Captura 3 — Painel Elements com filtro .btn-primary.</figcaption>
+          <img src="captura-3-regra-botao.png" alt="Painel Styles com filtro .btn-primary" width="718" height="331">
+          <figcaption>Captura 3 — Painel Styles com filtro .btn-primary.</figcaption>
         </figure>
         <h4>Antes e depois</h4>
-        <p>Na captura 2 temos o fundo da página e dos cartões branco, enquanto os botões são azuis com o texto branco e links são azuis e todos os cantos são quadrados.
-            Já na captura 4, a cor do fundp muda, os botões passam a ser marrom com o texto verde, os links agora são marrons também e todos os componentes tem a borda arredondada.</p>
-        <p><strong>Fundo da página: </strong>A variável --bs-body-bg passou de #fff para #f9f5e3, alterando o fundo do catálogo.</p>
-        <p><strong>Cor do texto: </strong>A variável --bs-body-color passou de #212529 para #0a0a0a, alterando a cor principal dos textos.</p>
-        <p><strong>Links: </strong>Os links no estado normal passaram da cor 13, 110, 253 para a cor 92, 59, 26 e quando o ponteiro está em cima foram da cor 10, 88, 202 para a cor 61, 38, 15. 
-            Já os botões, em estado normal foram da cor #0d6efd para a cor #5C3B1A, e em estado de hover, foram da cor #0b5ed7 para a cor #3D260F.</p>
+        <p>Na captura 2 temos o fundo da página e dos cartões branco, enquanto os botões são azuis com o texto branco e links são azuis e todos os cantos são pouco arredondados.
+            Já na captura 4, a cor do fundo muda, os botões passam a ser marrom com o texto verde, os links agora são marrons também e todos os componentes tem a borda arredondada.</p>
+        <p><strong>O Fundo da página e a cor de texto: </strong>No fundo da página, a variável --bs-body-bg passou de #fff para #f9f5e3, alterando o fundo do catálogo.
+            Já na cor do texto, a variável --bs-body-color passou de #212529 para #0a0a0a, alterando a cor principal dos textos.
+        </p>
+        <p><strong>O Botão Adicionar: </strong> Os botões, em estado normal foram da cor #0d6efd para a cor #5C3B1A, e em estado de hover, foram da cor #0b5ed7 para a cor #3D260F.</p>
+        <p><strong>O link "Início": </strong>O link no estado normal passa da cor 13, 110, 253 para a cor 92, 59, 26 e quando o ponteiro está em cima vai da cor 10, 88, 202 para a cor 61, 38, 15.</p>
         <p><strong>Arredondamento: </strong>A variável --bs-border-radius passou de 0.375rem para var(--raio) que corresponde a 15 px, alterando os cantos dos cartões, do alerta e dos botões.</p>
         <figure>
           <img src="captura-4-1200-depois.png" alt="Catálogo Bootstrap customizado na largura de 1200 px" width="695" height="684">
@@ -172,7 +173,7 @@
             Para medir o LCP, usei a aba Performance com a opção Disable network cache marcada. 
             As duas páginas foram testadas com as mesmas dimensões, de 651 x 633 pixels, conforme os valores verificados no Console.
         </p>
-        <table class="tabela-safra"
+        <table class="tabela-safra">
             <caption>Medições</caption>
             <thead>
                 <tr>
@@ -204,8 +205,8 @@
                 </tr>
                 <tr>
                     <th scope="row">total transferido</th>
-                    <td>415kB</td>
-                    <td>425kB</td>
+                    <td>415kB (não aparece a linha favicon.ico)</td>
+                    <td>425kB (não aparece a linha favicon.ico)</td>
                 </tr>
                 <tr>
                     <th scope="row">LCP (o valor do meio)</th>
@@ -251,7 +252,7 @@
         </p>
         <p><strong>O LCP: </strong>O valor do meio das cinco medições foi de 6,34s no catálogo autoral e 3,84s no catálogo Bootstrap, uma diferença de 2,50s. 
             No catálogo autoral, o menor valor foi de 2,08s e o maior foi de 21,29s, resultando em uma variação de 19,21s. 
-            No catálogo Bootstrap, o menor valor foi de 0,86a e o maior foi de 5,68s, com uma variação de 4,82s. 
+            No catálogo Bootstrap, o menor valor foi de 0,86s e o maior foi de 5,68s, com uma variação de 4,82s. 
             Com isso, a diferença entre os valores do meio é menor que a variação observada nas duas páginas. 
             Esses resultados mostram que o LCP variou entre as cargas e que o valor do meio foi menor na versão Bootstrap. 
             Não é possível atribuir essa diferença só ao framework, por que o LCP mede o tempo até a apresentação do maior elemento visível da página e não apenas o desempenho do CSS. 
@@ -271,16 +272,16 @@
         </p>
         <p><strong>Controle e trabalho: </strong>Na versão autoral, o catalogo.html possui o link de pular, o menu, a barra de categorias, 
             a container query do cartão e o seletor :has() para o foco, recursos que não aparecem no catalogo-bootstrap.html. 
-            Para implementa-los foi preciso escrever e ajustar regras próprias de CSS, o que permiti maior controle sobre a navegação, a adaptação dos componentes e a acessibilidade.
+            Para implementá-los foi preciso escrever e ajustar regras próprias de CSS, o que permite maior controle sobre a navegação, a adaptação dos componentes e a acessibilidade.
             Mas o catálogo Bootstrap tem o aviso de entrega, a frase de abertura e o selo, que não estão na versão autoral. 
             Assim, o Bootstrap reduz o CSS necessário para montar componentes prontos, mas exige conhecer sua estrutura de customização e a versão autoral pede mais código, mas oferece controle direto sobre as decisões visuais e funcionais.
         </p>
 
         <h3>4. Conclusão</h3>
-        <p>A  Agrofeira deve usar o Bootstrap nas páginas que precisam ser desenvolvidas rapido, por que precisa de menos esforço para fazer e
+        <p>A  Agrofeira deve usar o Bootstrap nas páginas que precisam ser desenvolvidas rápido, porque precisa de menos esforço para fazer e
             usa menos linhas de CSS, como nesse caso usamos apenas 84 linhas. Mas não usaria o Bootstrap em páginas que precisam ser mais personalizáveis e acessíveis
-            ou que exijam maior controle sobre os componentes, por que assim tem como implementar recursos específicos, mesmo que demande mais trabalho 
-            e mais linhas de CC, como nesse caso, usamos 444 linhas.
+            ou que exijam maior controle sobre os componentes, porque assim tem como implementar recursos específicos, mesmo que demande mais trabalho 
+            e mais linhas de CSS, como nesse caso, usamos 444 linhas.
         </p>
 
     </main>
