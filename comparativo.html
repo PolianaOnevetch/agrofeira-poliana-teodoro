@@ -164,8 +164,83 @@
           <img src="captura-4-1200-depois.png" alt="Catálogo Bootstrap customizado na largura de 1200 px" width="695" height="684">
           <figcaption>Captura 4 — Catálogo Bootstrap customizado na largura de 1200 px.</figcaption>
         </figure>
-        <h3>2. As medições</h3>
 
+        <h3>2. As medições</h3>
+        <p>
+            As medições foram realizadas no Google Chrome, utilizando os endereços públicos das páginas catalogo.html e catalogo-bootstrap.html. 
+            Para verificar a transferência de dados, foi utilizada a aba Network com a opção Disable cache marcada. 
+            Para medir o LCP, usei a aba Performance com a opção Disable network cache marcada. 
+            As duas páginas foram testadas com as mesmas dimensões, de 651 x 633 pixels, conforme os valores verificados no Console.
+        </p>
+        <table class="tabela-safra"
+            <caption>Medições</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Critério</th>
+                    <th scope="col">Autoral</th>
+                    <th scope="col">Bootstrap</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">CSS transferido</th>
+                    <td>4,9kB (Google Fonts: 0,3kB)</td>
+                    <td>35kB (bootstrap.min.css: 33,6kB + tokens.css: 0,9kB + agrofeira-bootstrap.css: 0,5kB)</td>
+                </tr>
+                <tr>
+                    <th scope="row">fontes</th>
+                    <td>20,6kB</td>
+                    <td>0,0kB</td>
+                </tr>
+                <tr>
+                    <th scope="row">imagens</th>
+                    <td>388kB</td>
+                    <td>388kB</td>
+                </tr>
+                <tr>
+                    <th scope="row">documento</th>
+                    <td>1,8kB</td>
+                    <td>1,9kB</td>
+                </tr>
+                <tr>
+                    <th scope="row">total transferido</th>
+                    <td>415kB</td>
+                    <td>425kB</td>
+                </tr>
+                <tr>
+                    <th scope="row">LCP (o valor do meio)</th>
+                    <td>6,34 s (21,29 s; 6,34 s; 2,08 s; 7,56 s; 2,64 s)</td>
+                    <td>3,84 s (5,42 s; 3,34 s; 3,84 s; 5,68 s; 0,86 s)</td>
+                </tr>
+                <tr>
+                    <th scope="row">linhas de CSS próprio</th>
+                    <td>1 + 44 + 62 + 106 + 228 + 3 = 444</td>
+                    <td>62 + 22 = 84</td>
+                </tr>
+                <tr>
+                    <th scope="row">classes no cartão do açaí</th>
+                    <td>4 classes em 3 elementos</td>
+                    <td>14 classes em 8 elementos (com selo: 16 classes em 9 elementos)</td>
+                </tr>
+            </tbody>
+        </table>
+        <figure>
+          <img src="captura-5-rede-autoral.png" alt="Inspecionar na aba Network da página catalogo.html" width="714" height="642">
+          <figcaption>Captura 5 — Inspecionar na aba Network da página catalogo.html.</figcaption>
+        </figure>
+        <figure>
+          <img src="captura-6-rede-bootstrap.png" alt="Inspecionar na aba Network da página catalogo-bootstrap.html" width="719" height="642">
+          <figcaption>Captura 6 — Inspecionar na aba Network da página catalogo-bootstrap.html.</figcaption>
+        </figure>
+        <figure>
+          <img src="captura-7-lcp-autoral.png" alt="Inspecionar na aba Performance da página catalogo.html" width="719" height="624">
+          <figcaption>Captura 7 — Inspecionar na aba Performance da página catalogo.html (Última medição).</figcaption>
+        </figure>
+        <figure>
+          <img src="captura-8-lcp-bootstrap.png" alt="Inspecionar na aba Performance da página catalogo-bootstrap.html" width="714" height="645">
+          <figcaption>Captura 8 — Inspecionar na aba Performance da página catalogo-bootstrap.html (Última medição).</figcaption>
+        </figure>
+        
         <h3>3. A leitura dos números</h3>
 
         <h3>4. Conclusão</h3>
