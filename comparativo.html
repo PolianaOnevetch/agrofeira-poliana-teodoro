@@ -242,8 +242,46 @@
         </figure>
         
         <h3>3. A leitura dos números</h3>
+        <p><strong>Os bytes: </strong>Conforme os dados das medições na tabela, o catálogo-bootstrap.html baixou 7,14 vezes mais que o catalogo.html (autoral) incluindo a folha do Google Fonts.
+            Já sem ela a comparação passa a ser de 35 kB contra 4,6 kB, resultando 7,61 vezes mais que o catálogo autoral.
+            O total transferido não representa apenas o peso do CSS. As duas páginas transferiram 388 kB de imagens, 
+            enquanto somente a versão autoral carregou a fonte do Google Fonts, com 20,6 kB. 
+            Por isso, mesmo com pouca diferença no total transferido (415 kB no catálogo autoral e 425 kB no catálogo Bootstrap), 
+            o peso das folhas de estilo é bastante diferente.
+        </p>
+        <p><strong>O LCP: </strong>O valor do meio das cinco medições foi de 6,34s no catálogo autoral e 3,84s no catálogo Bootstrap, uma diferença de 2,50s. 
+            No catálogo autoral, o menor valor foi de 2,08s e o maior foi de 21,29s, resultando em uma variação de 19,21s. 
+            No catálogo Bootstrap, o menor valor foi de 0,86a e o maior foi de 5,68s, com uma variação de 4,82s. 
+            Com isso, a diferença entre os valores do meio é menor que a variação observada nas duas páginas. 
+            Esses resultados mostram que o LCP variou entre as cargas e que o valor do meio foi menor na versão Bootstrap. 
+            Não é possível atribuir essa diferença só ao framework, por que o LCP mede o tempo até a apresentação do maior elemento visível da página e não apenas o desempenho do CSS. 
+            Além disso, as páginas possuem diferenças de conteúdo e de recursos carregados, somente a versão autoral utiliza a folha e a fonte do Google Fonts. Então, as medições 
+            permitem comparar os resultados obtidos nas condições dos testes, mas não dá pra afirmar que o Bootstrap tornou a página mais rápida.
+        </p>
+        <p><strong>As linhas e as classes: </strong> O catálogo autoral tem 444 linhas de CSS próprio, contra 84 na versão Bootstrap, 
+            mas os escopos são diferentes, o CSS autoral atende às cinco páginas do site, enquanto o CSS Bootstrap atende só o catálogo. 
+            Assim, componentes.css inclui regras de outras páginas, como as de avisos e busca. 
+            No cartão, o autoral utiliza 4 classes em 3 elementos e o Bootstrap, 14 classes em 8 elementos sem o selo e 16 classes em 9 elementos com ele. 
+            No autoral, mudanças visuais exigem alterar as regras do componente, já no Bootstrap, a customização utiliza variáveis e regras que adaptam os estilos do framework.
+        </p>
+        <p><strong>O que a medição não mostra: </strong>Os resultados não mostram quanto tempo foi necessário para desenvolver cada versão nem o esforço de manutenção futura. 
+        A contagem de linhas e classes também não mede diretamente a dificuldade de compreender, testar e manter o código, pois as duas versões possuem estruturas e responsabilidades diferentes. 
+        Além disso, o LCP mostra os valores de acordo com as condições que as medições foram realizadas e variam bastante entre as cargas.
+        Como as páginas possuem diferenças de conteúdo e de recursos carregados, os resultados não isolam o efeito do bootstrap.
+        </p>
+        <p><strong>Controle e trabalho: </strong>Na versão autoral, o catalogo.html possui o link de pular, o menu, a barra de categorias, 
+            a container query do cartão e o seletor :has() para o foco, recursos que não aparecem no catalogo-bootstrap.html. 
+            Para implementa-los foi preciso escrever e ajustar regras próprias de CSS, o que permiti maior controle sobre a navegação, a adaptação dos componentes e a acessibilidade.
+            Mas o catálogo Bootstrap tem o aviso de entrega, a frase de abertura e o selo, que não estão na versão autoral. 
+            Assim, o Bootstrap reduz o CSS necessário para montar componentes prontos, mas exige conhecer sua estrutura de customização e a versão autoral pede mais código, mas oferece controle direto sobre as decisões visuais e funcionais.
+        </p>
 
         <h3>4. Conclusão</h3>
+        <p>A  Agrofeira deve usar o Bootstrap nas páginas que precisam ser desenvolvidas rapido, por que precisa de menos esforço para fazer e
+            usa menos linhas de CSS, como nesse caso usamos apenas 84 linhas. Mas não usaria o Bootstrap em páginas que precisam ser mais personalizáveis e acessíveis
+            ou que exijam maior controle sobre os componentes, por que assim tem como implementar recursos específicos, mesmo que demande mais trabalho 
+            e mais linhas de CC, como nesse caso, usamos 444 linhas.
+        </p>
 
     </main>
     <footer class="rodape-site">
