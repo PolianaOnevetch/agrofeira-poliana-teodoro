@@ -14,7 +14,7 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4" aria-label="Principal">
         <div class="container">
           <a class="navbar-brand" href="index.html">AgroFeira</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu", aria-controls="menu", aria-expanded="false" aria-label="Menu">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menu">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="menu">
@@ -48,6 +48,7 @@
                   <p class="card-text text-body-secondary">Sítio Boa Vista, Colônia do Uraim</p>
                   <p class="card-text fw-bold">R$ 12,00 o litro</p>
                   <button type="button" class="btn btn-primary">Adicionar</button>
+                  <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#detalhe-acai"> Ver detalhes</button>
                 </div>
               </article>
             </li>
@@ -138,6 +139,26 @@
         <p>AgroFeira — da roça para a mesa, em Paragominas.</p>
         <p>Fotos recortadas, via Wikimedia Commons: açaí, Jorge Láscar, CC BY-SA 2.0; farinha, Wagner Tamanaha, CC BY-SA 2.0; banana, Wilfredor, CC0; pimenta-do-reino, Ryan Snyder, CC BY 2.0; cacau, Míriam Ramalho, CC BY 4.0; cupuaçu, BjoernS, CC BY-SA 2.0 DE; jambu, Tuxyso, CC BY-SA 3.0.</p>
       </footer>
+    </div>
+    <div class="modal fade" id="detalhe-acai" tabindex="-1" role="dialog" aria-labelledby="detalhe-acai-titulo">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="detalhe-acai-titulo">Açaí médio</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid mb-3" src="acai.jpg" width="640" height="480" alt="Tigela de açaí batido, com duas colheres de plástico">
+            <p class="text-body-secondary mb-1">Sítio Boa Vista, Colônia do Uraim</p>
+            <p class="fw-bold">R$ 12,00 o litro</p>
+            <p class="mb-0">O açaí médio é oferecido pelo Sítio Boa Vista, localizado na Colônia do Uraim. O produto com selo “Safra nova”, indicando ser um produto fresco.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Adicionar</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
