@@ -85,18 +85,51 @@
         <ul>
             <li><strong>Foco após erro no formulário: </strong>Quando o formulário é enviado com dados inválidos, 
                 o foco permanece no botão de envio, em vez de ser direcionado ao primeiro campo com erro</li>
-            <li><strong>Diálogo de detalhes apenas do cartão açaí: </strong>Oiálogo apresenta informações específicas 
+            <li><strong>Diálogo de detalhes apenas do cartão açaí: </strong>O diálogo apresenta informações específicas 
                 do Açaí médio e não exibe detalhes dos outros produtos. Para ampliar essa funcionalidade, seria necessário 
-                implementar uma forma de atualizar o conteúdo do diálogo conforme o produto selecionado, e precisaria deJavaScript adicional.</li>
+                implementar uma forma de atualizar o conteúdo do diálogo conforme o produto selecionado, e precisaria de JavaScript adicional.</li>
         </ul>
 
         <h3>2. O registro de decisão</h3>
         <h4>Contexto</h4>
+        <p>
+            No projeto AgroFeira, é preciso escolher entre CSS autoral e Bootstrap. O CSS autoral transferiu 4,9 kB, 
+            enquanto o CSS do Bootstrap e seus arquivos de customização somaram 35 kB. O script do Bootstrap tem 80,5 kB 
+            de recurso e 25,2 kB transferidos. Sem JavaScript, o menu e o diálogo não funcionaram, e o formulário ficou sem validação.
+        </p>
+
         <h4>Opções consideradas</h4>
+        <ul>
+            <li><strong>Folha autoral: </strong>Oferece mais controle e personalização, transferiu 4,9 kB de CSS, 
+                mas exige mais trabalho de implementação e manutenção.</li>
+            <li><strong>Bootstrap: </strong>Oferece grade e componentes prontos, mas seu CSS transferiu 35 kB e 
+                seu JavaScript, 25,2 kB. Poderia usar somente o CSS para evitar o script do framework.</li>
+            <li><strong>Tailwind: </strong>Permite criar interfaces com classes utilitárias, mas exige aprender 
+                outra abordagem e configurar o processo de produção. Além disso a documentação explica que o 
+                Play CDN é usado para desenvolvimento e não para produção.</li>
+        </ul>
+
         <h4>Decisão</h4>
-        <h4>Consequencias aceitas</h4>
+        <p>
+            Escolhi usar o Bootstrap somente com CSS, pois aproveito os componentes prontos e evito que o JavaScript do framework 
+            dispute o controle dos elementos com o React a partir da atividade 11.
+        </p>
+
+        <h4>Consequências aceitas</h4>
+        <ul>
+            <li>Peso maior do CSS, sendo 35 kB contra 4,9 kB</li>
+            <li>Implementar no React a abertura e o fechamento do menu e do diálogo, garantindo foco, navegação por teclado e atributos ARIA.</li>
+        </ul>
+
         <h4>O que me faria mudar de ideia</h4>
+        <p>
+            Eu pensaria em mudar de ideia caso implementar as interações do menu e diálogo no React se torne muito mais trabalhoso e 
+            complicado do que o JS do Bootstrap
+        </p>
+
         <h4>Fontes</h4>
+        <p>TAILWIND CSS. Play CDN. Documentação oficial, seção “Using the Play CDN”. Disponível em: https://tailwindcss.com/docs/installation/play-cdn. Acesso em: 25 out. 2026.</p>
+        <p>ZABOT, Diego. Aplicativos com Bootstrap e Angular.</p>
     </main>
     <footer class="rodape-site">
       <p>Agricultura familiar de Paragominas</p>
