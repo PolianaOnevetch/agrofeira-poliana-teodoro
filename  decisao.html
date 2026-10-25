@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poliana Teodoro da Silva Onevetch</title>
+    <link rel="stylesheet" href="camadas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="componentes.css">
+    <link rel="stylesheet" href="utilitarios.css">
+  </head>
+  <body class="pagina-catalogo">
+    <a class="pular" href="#main">Pular para o conteúdo</a>
+    <header class="cabecalho-site">
+      <h1>Relatório</h1>
+      <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="safra.html">Safra</a></li>
+        <li><a href="cadastro-produtor.html">Cadastro de produtor</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main id="main">
+        <h2>Aula 6 — o registro de decisão</h2>
+        <ul>
+            <li>Nome: Poliana Teodoro da Silva Onevetch</li>
+            <li>Matrícula: 2024003010</li>
+            <li>Endereço do Repositório: <a href="https://github.com/PolianaOnevetch/agrofeira-poliana-teodoro">https://github.com/PolianaOnevetch/agrofeira-poliana-teodoro</a></li>
+            <li>Endereço Público do Site: <a href="https://polianaonevetch.github.io/agrofeira-poliana-teodoro/">https://polianaonevetch.github.io/agrofeira-poliana-teodoro/</a></li>
+            <li>Catálogo Bootstrap: <a href="https://polianaonevetch.github.io/agrofeira-poliana-teodoro/catalogo-bootstrap.html">https://polianaonevetch.github.io/agrofeira-poliana-teodoro/catalogo-bootstrap.html</a></li>
+            <li>Checkout Bootstrap: <a href="https://polianaonevetch.github.io/agrofeira-poliana-teodoro/checkout-bootstrap.html">https://polianaonevetch.github.io/agrofeira-poliana-teodoro/checkout-bootstrap.html</a></li>
+        </ul>
+        <h3>1. As correções de acessibilidade</h3>
+        <table class="tabela-safra">
+            <caption>Correções de acessibilidade do catálogo e do formulário</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Componente</th>
+                    <th scope="col">Problema</th>
+                    <th scope="col">Como se detectou</th>
+                    <th scope="col">Correção</th>
+                    <th scope="col">Onde está no código</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">O nome do botão do menu</th>
+                    <td>O nome na documentação estava em inglês "Toggle navigation".</td>
+                    <td>No painel Accessibility, que mostra o nome acessível do botão.</td>
+                    <td>Foi alterado para aria-label="Menu".</td>
+                    <td>No button.navbar-toggler da barra de navegação.</td>
+                </tr>
+                <tr>
+                    <th scope="row">O nome do botão de fechar</th>
+                    <td>O nome na documentação estava em inglês "Close".</td>
+                    <td>No painel Accessibility, que mostra o nome acessível do botão.</td>
+                    <td>Foi alterado para aria-label="Fechar".</td>
+                    <td>No button.btn-close do diálogo de detalhes do açaí.</td>
+                </tr>
+                <tr>
+                    <th scope="row">O nível do título do diálogo</th>
+                    <td>A documentação usa h1, mas a página já possui um título principal.</td>
+                    <td>Comparação com a estrutura de títulos recomendada para a página.</td>
+                    <td>Foi usado h2 com as classes modal-title h5.</td>
+                    <td>No título “Açaí médio” dentro de .modal-header.</td>
+                </tr>
+                <tr>
+                    <th scope="row">a ligação das mensagens aos campos</th>
+                    <td>As mensagens de erro não estão associadas aos campos para leitores de tela.</td>
+                    <td>Painel Accessibility do Chrome, verificando aria-describedby e a descrição do campo.</td>
+                    <td>Foram adicionados IDs às mensagens e aria-describedby aos campos correspondentes.</td>
+                    <td>Nos campos nome, email e termos, e nas respectivas mensagens .invalid-feedback.</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <p>Pendências</p>
+            <li><strong>Foco após erro no formulário: </strong>Quando o formulário é enviado com dados inválidos, 
+                o foco permanece no botão de envio, em vez de ser direcionado ao primeiro campo com erro</li>
+            <li><strong>Diálogo de detalhes apenas do cartão açaí: </strong>Oiálogo apresenta informações específicas 
+                do Açaí médio e não exibe detalhes dos outros produtos. Para ampliar essa funcionalidade, seria necessário 
+                implementar uma forma de atualizar o conteúdo do diálogo conforme o produto selecionado, e precisaria deJavaScript adicional.</li>
+        </ul>
+
+        <h3>2. O registro de decisão</h3>
+
+    </main>
+    <footer class="rodape-site">
+      <p>Agricultura familiar de Paragominas</p>
+      <p>Por Poliana Onevetch</p>
+    </footer>
+  </body>
+</html>
